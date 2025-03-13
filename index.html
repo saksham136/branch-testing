@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <script>
+        const baseUrl = 'http://127.0.0.1:8001/dashboard'
+        var sessionToken = "{{ sessionToken }}"
+      </script>
+
+      <script type="text/javascript" src="{% static 'js/shouvik/getCoalCompaniesPf.js' %}"></script>
+    	<script type="text/javascript" src="{% static 'js/shouvik/getCCReportPf.js' %}"></script>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="light-mode-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+           </div>
+            <header class="header">
+            <nav class="nav container">
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list">
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Coal Companies
+                            </div>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        PF <i class='fas fa-angle-down'></i>
+                                    </div>
+                                    <ul class="dropdown__submenu" id="first">
+                                        <li ><a href="#" class="dropdown__link" onclick="getCoalCompanies()">Companies</a></li>
+                                        <li><a href="#" class="dropdown__link">Units</a></li>
+                                        <li><a href="#" class="dropdown__link">Areas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        Pension <i class="ri-arrow-down-s-line dropdown__subarrow"></i>
+                                    </div>
+                                    <ul class="dropdown__submenu" id="second">
+                                        <li><a href="#" class="dropdown__link">Companies</a></li>
+                                        <li><a href="#" class="dropdown__link">Units</a></li>
+                                        <li><a href="#" class="dropdown__link">Areas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        Advance <i class="ri-arrow-down-s-line dropdown__subarrow"></i>
+                                    </div>
+                                    <ul class="dropdown__submenu" id="third">
+                                        <li><a href="#" class="dropdown__link">Companies</a></li>
+                                        <li><a href="#" class="dropdown__link">Units</a></li>
+                                        <li><a href="#" class="dropdown__link">Areas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Regional Offices <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                            <ul class="dropdown__menu">
+                                <li><a href="#" class="dropdown__link">PF</a></li>
+                                <li><a href="#" class="dropdown__link">Pension</a></li>
+                                <li><a href="#" class="dropdown__link">Advance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div style="display:flex;color:black;font-weight:bold;margin-top:100px;justify-content:center ; font-size:1.2rem">Please use the tabs above to navigate</div><br>
+        <div id="getTableData" style="overflow-y:auto;width:40%;margin-block-start: 30px;margin-left:30%;text-align: center;">
+
+
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+                
+            </div>
+    </body>
+</html>
